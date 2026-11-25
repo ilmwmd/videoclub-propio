@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Paleta extraída del icono del dragón: rojo intenso con bordes más claros */
+  --color-brand-950: #2a0709;
+  --color-brand-900: #450a0a;
+  --color-brand-800: #7f1d1d;
+  --color-brand-700: #b91c1c;
+  --color-brand-600: #dc2626;
+  --color-brand-500: #ef4444;
+  --color-brand-400: #f87171;
+  --color-brand-300: #fca5a5;
+
+  --color-ink-950: #050608;
+  --color-ink-900: #0a0b11;
+  --color-ink-800: #11121b;
+
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+  font-family: var(--font-sans);
+  background-color: #050608;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #050608;
+  color: #f8fafc;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(220, 38, 38, 0.45);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid #f87171;
+  outline-offset: 3px;
+}
+
+/* Scrollbar acorde con la paleta */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #08090e; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#b91c1c, #7f1d1d);
+  border: 2px solid #08090e;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover { background: #ef4444; }
+
+/* ---------- Componentes reutilizables ---------- */
+.vc-panel {
+  position: relative;
+  border: 1px solid rgba(248, 113, 113, 0.14);
+  border-radius: 1.25rem;
+  background:
+    linear-gradient(160deg, rgba(35, 17, 20, 0.72) 0%, rgba(12, 13, 20, 0.88) 45%, rgba(8, 9, 14, 0.94) 100%);
+  box-shadow:
+    0 28px 70px -28px rgba(0, 0, 0, 0.9),
+    inset 0 1px 0 rgba(255, 255, 255, 0.045);
+  backdrop-filter: blur(14px);
+}
+
+.vc-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, transparent, rgba(248, 113, 113, 0.75), transparent);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.vc-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #f87171;
+}
+
+.vc-eyebrow::before,
+.vc-eyebrow::after {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #dc2626);
+}
+.vc-eyebrow::after { transform: rotate(180deg); }
+
+.vc-title {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #fff 20%, #fca5a5 130%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.vc-btn-primary {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 45%, #b91c1c 100%);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 10px 26px -10px rgba(220, 38, 38, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+.vc-btn-primary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+  box-shadow: 0 16px 34px -10px rgba(239, 68, 68, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+.vc-btn-primary:active { transform: translateY(0); }
+.vc-btn-primary:disabled { transform: none; filter: grayscale(0.4); opacity: 0.55; }
+
+.vc-btn-ghost {
+  border: 1px solid rgba(248, 113, 113, 0.28);
+  border-radius: 0.75rem;
+  background: rgba(10, 11, 17, 0.6);
+  color: #e2e8f0;
+  font-weight: 600;
+  transition: border-color 180ms ease, background 180ms ease, color 180ms ease;
+}
+.vc-btn-ghost:hover {
+  border-color: rgba(248, 113, 113, 0.8);
+  background: rgba(127, 29, 29, 0.25);
+  color: #fff;
+}
+
+.vc-chip {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(248, 113, 113, 0.3);
+  border-radius: 999px;
+  background: rgba(10, 11, 17, 0.7);
+  color: #fca5a5;
+  backdrop-filter: blur(6px);
+}
+
+.vc-input {
+  width: 100%;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 0.75rem;
+  background: rgba(8, 9, 14, 0.75);
+  padding: 0.75rem 1rem;
+  color: #f8fafc;
+  outline: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+.vc-input::placeholder { color: #64748b; }
+.vc-input:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.18);
+}
+
+/* ---------- Pósters remotos con fallback temático ---------- */
+.vc-poster {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background: linear-gradient(150deg, #2a0709, #08090e);
+}
+
+.vc-poster-fallback {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(220, 38, 38, 0.42), transparent 65%),
+    linear-gradient(160deg, #2a0709, #08090e 75%);
+}
+
+.vc-poster-fallback__dragon {
+  font-size: 2.75rem;
+  filter: drop-shadow(0 0 14px rgba(239, 68, 68, 0.75));
+}
+
+.vc-poster-fallback__title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fecaca;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

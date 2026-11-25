@@ -1,0 +1,149 @@
+{
+  "movies": [
+    {
+      "id": "movies-data-2",
+      "titulo": "La Era De Hielito",
+      "desc": "Un grupo de amigos se embarca en una aventura entre paisajes helados y desafíos inesperados.",
+      "genero": "ANIMACIÓN",
+      "calificacion": 4.6,
+      "anio": 2002,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/3/3c/Ice_Age_%282002_film%29_poster.jpg"
+    },
+    {
+      "id": "movies-data-3",
+      "titulo": "Los Increibles",
+      "desc": "Una familia con habilidades extraordinarias une fuerzas para proteger su hogar y trabajar en equipo.",
+      "genero": "ANIMACIÓN",
+      "calificacion": 4.9,
+      "anio": 2004,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/2/27/The_Incredibles_%282004_animated_feature_film%29.jpg"
+    },
+    {
+      "id": "movies-data-4",
+      "titulo": "Madagascar",
+      "desc": "Un grupo de animales deja su vida de zoológico atrás y descubre una isla llena de sorpresas.",
+      "genero": "ANIMACIÓN",
+      "calificacion": 4.7,
+      "anio": 2005,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/3/36/Madagascar_Theatrical_Poster.jpg"
+    },
+    {
+      "id": "movies-data-5",
+      "titulo": "Shrek",
+      "desc": "Un ogro solitario acepta una misión que lo lleva a conocer a un burro parlanchín y a una princesa.",
+      "genero": "ANIMACIÓN",
+      "calificacion": 4.8,
+      "anio": 2001,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/7/7b/Shrek_%282001_animated_feature_film%29.jpg"
+    },
+    {
+      "id": "movies-data-6",
+      "titulo": "Shrek 2",
+      "desc": "Shrek y Fiona visitan el reino de Muy Muy Lejano, donde la familia y las apariencias complican su vida.",
+      "genero": "ANIMACIÓN",
+      "calificacion": 4.5,
+      "anio": 2004,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/b/b9/Shrek_2_poster.jpg"
+    },
+    {
+      "id": "movies-data-7",
+      "titulo": "Shrek 3",
+      "desc": "Shrek emprende un viaje para encontrar al heredero del reino y decidir qué futuro desea.",
+      "genero": "ANIMACIÓN",
+      "calificacion": 4.3,
+      "anio": 2007,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/2/22/Shrek_the_Third_%282007_animated_feature_film%29.jpg"
+    },
+    {
+      "id": "movies-data-8",
+      "titulo": "Toy Story",
+      "desc": "Woody ve cambiar su lugar como juguete favorito cuando llega Buzz Lightyear, y ambos deben aprender a cooperar.",
+      "genero": "ANIMACIÓN",
+      "calificacion": 4.1,
+      "anio": 1995,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg"
+    },
+    {
+      "id": "movies-data-9",
+      "titulo": "Toy Story 2",
+      "desc": "Woody es separado de sus amigos y descubre una parte desconocida de su historia como juguete.",
+      "genero": "ANIMACIÓN",
+      "calificacion": 4.7,
+      "anio": 1999,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/c/c0/Toy_Story_2.jpg"
+    },
+    {
+      "id": "movies-data-10",
+      "titulo": "Toy Story 3",
+      "desc": "Ante una nueva etapa en la vida de Andy, Woody y sus amigos buscan juntos un lugar al que pertenecer.",
+      "genero": "ANIMACIÓN",
+      "calificacion": 3.9,
+      "anio": 2010,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/6/69/Toy_Story_3_poster.jpg"
+    },
+    {
+      "id": "movies-data-11",
+      "titulo": "Toy Story 4",
+      "desc": "Woody acompaña a Forky en un viaje que lo lleva a reencontrarse con viejos amigos y tomar nuevas decisiones.",
+      "genero": "ANIMACIÓN",
+      "calificacion": 4.9,
+      "anio": 2019,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/4/4c/Toy_Story_4_poster.jpg"
+    },
+    {
+      "id": "movies-data-12",
+      "titulo": "Dune",
+      "desc": "En un planeta desértico, Paul Atreides se ve envuelto en una lucha por el poder y un recurso muy valioso.",
+      "genero": "CIENCIA FICCIÓN",
+      "calificacion": 4.2,
+      "anio": 2021,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg"
+    },
+    {
+      "id": "movies-data-13",
+      "titulo": "Elementos",
+      "desc": "En una ciudad donde conviven los elementos, una joven de fuego conoce a alguien que cambia su forma de ver el mundo.",
+      "genero": "ANIMACIÓN",
+      "calificacion": 4.6,
+      "anio": 2023,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/4/4d/Elemental_final_poster.jpg"
+    },
+    {
+      "id": "movies-data-14",
+      "titulo": "Hasta El Ultimo Hombre",
+      "desc": "Un médico militar se enfrenta a la guerra y trata de salvar vidas sin renunciar a sus convicciones.",
+      "genero": "BÉLICA",
+      "calificacion": 4.4,
+      "anio": 2016,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/8/8a/Hacksaw_Ridge_poster.png"
+    },
+    {
+      "id": "movies-data-15",
+      "titulo": "Lee Miller",
+      "desc": "La fotógrafa y corresponsal Lee Miller documenta momentos cruciales de la guerra y la historia.",
+      "genero": "BIOGRÁFICA",
+      "calificacion": 4.8,
+      "anio": 2023,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/d/d5/Lee_%282023_film_poster%29.jpg"
+    },
+    {
+      "id": "movies-data-16",
+      "titulo": "Marte",
+      "desc": "Un astronauta queda aislado en Marte y recurre a su ingenio para sobrevivir hasta poder volver a casa.",
+      "genero": "CIENCIA FICCIÓN",
+      "calificacion": 4,
+      "anio": 2015,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/c/cd/The_Martian_film_poster.jpg"
+    },
+    {
+      "id": "movies-data-17",
+      "titulo": "El hobbit: Un viaje inesperado",
+      "desc": "Bilbo Bolsón se embarca en una aventura inesperada para recuperar la Montaña Solitaria.",
+      "genero": "FANTASÍA",
+      "calificacion": 4.5,
+      "anio": 2012,
+      "portada": "https://upload.wikimedia.org/wikipedia/en/b/b3/The_Hobbit-_An_Unexpected_Journey.jpeg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
